@@ -5,7 +5,10 @@ project(QTTemplate VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD          17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB_RECURSE C_SOURCES source/*.cpp source/*.c)
+file(GLOB_RECURSE C_SOURCES
+  source/*.cpp source/*.c
+  source/*.hpp source/*.h
+)
 set(QML_SOURCES
   source/Main.qml
 )
